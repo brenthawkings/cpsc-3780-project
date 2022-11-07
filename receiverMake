@@ -1,0 +1,7 @@
+CPP = g++
+COMPILERFLAGS = -Wall
+
+All: receiver.exe 
+
+receiver.exe: receiver.cpp
+	$(CPP) -o $@ $(COMPILERFLAGS) $< $(LFLAGS) $(LIBRARIES)
